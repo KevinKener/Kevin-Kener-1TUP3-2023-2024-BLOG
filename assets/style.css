@@ -1,0 +1,183 @@
+/* Estilos básicos y Generales para el body y headear*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Le doy estilo al logo de blog */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Estilo de Header nav */
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .search-bar input {
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+}
+
+article.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+article.post img {
+    width: 400px;
+    height: auto;
+    margin: 10px 0;
+}
+
+
+/* Estilo caja de comentarios */
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.comments form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Aside estilos */
+aside {
+    flex: 1;
+    margin-left: 20px;
+}
+
+aside section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+aside section h3 {
+    margin-bottom: 10px;
+}
+
+aside section ul {
+    list-style: none;
+}
+
+aside section ul li {
+    margin-bottom: 10px;
+}
+
+aside section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo del Footer */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para diseño responsive */
+/* El tamaño (768px) es bastante bueno tanto para las mayorias de celulares o tablets actuales */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
